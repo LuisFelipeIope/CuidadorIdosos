@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cuidador de idosos</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_cad_cuidador">Cadastrar</string>
+    <string-array name="opcoes_cursos">
+        <item>Selecione</item>
+        <item>Ensino Fundamental Incompleto</item>
+        <item>Ensino Fundamental Completo</item>
+        <item>Ensino Médio Incompleto</item>
+        <item>Ensino Médio Completo</item>
+        <item>Ensino Superior Incompleto</item>
+        <item>Ensino Superior Completo</item>
+    </string-array>
+</resources>

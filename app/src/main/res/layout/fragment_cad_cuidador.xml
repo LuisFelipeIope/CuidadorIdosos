@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadCuidador">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/TextViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textViewCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Celular:" />
+
+            <EditText
+                android:id="@+id/editCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Spinner
+                android:id="@+id/Escolaridade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opcoes_cursos" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCursoDeCuidador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Curso de cuidador" />
+
+            <TextView
+                android:id="@+id/textViewOutrosCursos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outros Cursos Proficionalizantes:" />
+
+            <EditText
+                android:id="@+id/editCursos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textViewNasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Nascimento" />
+
+            <CalendarView
+                android:id="@+id/cvDataNasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:textAlignment="center"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
