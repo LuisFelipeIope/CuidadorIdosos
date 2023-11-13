@@ -6,6 +6,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_cad_cuidador">Cadastrar</string>
+    <string name="title_con_cuidador_list">Cuidadores</string>
     <string-array name="opcoes_cursos">
         <item>Selecione</item>
         <item>Ensino Fundamental Incompleto</item>

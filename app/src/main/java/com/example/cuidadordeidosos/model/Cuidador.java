@@ -15,7 +15,6 @@ public class Cuidador {
         private int Escolaridade;
         private boolean CursoDeCuidador;
         private String OutrosCursos;
-        private String dataNascimento;
 
         public Cuidador() {
                 this.setId(0);
@@ -25,7 +24,6 @@ public class Cuidador {
                 this.setEscolaridade(0);
                 this.setCursoDeCuidador(false);
                 this.setOutrosCursos("");
-                this.setDataNascimento("1970-01-01");
         }
 
         public Cuidador(JSONObject jp) {
@@ -37,10 +35,9 @@ public class Cuidador {
                         this.setCelular((String) jp.get("celular"));
                         this.setEscolaridade((Integer) jp.get("escolaridade"));
                         boolean bool =
-                                Boolean.getBoolean(jp.get("Curso").toString());
+                                Boolean.getBoolean(jp.get("temCurso").toString());
                         this.setCursoDeCuidador(bool);
-                        this.setOutrosCursos((String) jp.get("OutrosCursos"));
-                        this.setDataNascimento((String) jp.get("nascimento"));
+                        this.setOutrosCursos((String) jp.get("cursos"));
                 } catch (JSONException e) {
                         e.printStackTrace();
                 }
@@ -53,9 +50,9 @@ public class Cuidador {
                         json.put("nome", this.Nome);
                         json.put("email", this.Email);
                         json.put("celular", this.Celular);
-                        json.put("Curso", this.CursoDeCuidador);
-                        json.put("OutrosCursos", this.OutrosCursos);
-                        json.put("nascimento", this.dataNascimento);
+                        json.put("temCurso", this.CursoDeCuidador ? 1 : 0);
+                        json.put("cursos", this.OutrosCursos);
+                        json.put("Escolaridade_idEscolaridade", this.Escolaridade);
                 } catch (JSONException e) {
                         e.printStackTrace();
                 }
@@ -118,18 +115,5 @@ public class Cuidador {
                 OutrosCursos = outrosCursos;
         }
 
-        public String getDataNascimento() {
-                return dataNascimento;
-        }
 
-        public void setDataNascimento(String dataNascimento) {
-                SimpleDateFormat formato =
-                        new SimpleDateFormat("yyyy-MM-dd");
-                try {
-                        Date data = (Date) formato.parse(dataNascimento);
-                        this.dataNascimento = dataNascimento;
-                } catch (ParseException e) {
-                        this.dataNascimento ="1900-01-01";
-                }
-        }
 }

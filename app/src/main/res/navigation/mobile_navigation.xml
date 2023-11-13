@@ -17,14 +17,16 @@
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.cuidadordeidosos.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+
     <fragment
         android:id="@+id/navigation_CadCuidador"
-        android:name="com.example.cuidadordeidosos.CadCuidador"
+        android:name="com.example.cuidadordeidosos.Cuidador.CadCuidador"
         android:label="@string/title_cad_cuidador"
         tools:layout="@layout/fragment_cad_cuidador" />
+
+    <fragment
+        android:id="@+id/navigation_con_cuidador"
+        android:name="com.example.cuidadordeidosos.Cuidador.CadCuidador"
+        android:label="@string/title_con_cuidador_list"
+        tools:layout="@layout/fragment_con_cuidador_list" />
 </navigation>
